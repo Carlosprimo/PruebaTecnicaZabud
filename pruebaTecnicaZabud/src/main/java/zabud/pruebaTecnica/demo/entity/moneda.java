@@ -22,6 +22,15 @@ public class moneda {
 		@Column(name="cantidad")
 		private int cantidad;
 		
+		@Column(name="dinero")
+		private int dinero;
+		
+		public int getDinero() {
+			return dinero;
+		}
+		public void setDinero(int dinero) {
+			this.dinero = dinero;
+		}
 		public long getId() {
 			return id;
 		}
@@ -40,8 +49,5 @@ public class moneda {
 		public void setCantidad(int cantidad) {
 			this.cantidad = cantidad;
 		}
-		@Override
-		public String toString() {
-			return "moneda [id=" + id + ", nombre=" + nombre + ", cantidad=" + cantidad + "]";
-		}
+
 }
